@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Prisha's Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is
+                <div class="name">
+                    <span class="purple">Prisha Aggarwal</span>
+                </div>
+                <div>and I am a <span id="element"></span> </div>
+                <div class="info">
+                    I'm a student currently enrolled at Thapar Institute of Technology. I have a keen interest in exploring diverse fields and expressing myself through my work. Excelling in both academics and sports, I find joy in delving into coding projects during my free time. Beyond my proficiency in coding, I possess talents in designing, marketing, painting, and writing poetry. To unwind, you might catch me playing the guitar. When it comes to writing, I believe it's not just a skill to acquire but a powerful tool for self-expression.
+                </div>
+                <div class="resume">
+                    <button class="resume-button"><a href="">Check Resume</a></button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="Images/Profile.jpg" alt="Profile">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-grey">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="Images/saic.png" alt="">
+                    <div class="vertical-title">
+                        Member(Sept 2023-Apr 2024)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam facere soluta, architecto quos
+                        dolorem veritatis reprehenderit! Debitis exercitationem ipsam beatae optio dolorem ullam
+                        incidunt, aspernatur similique quae adipisci id porro.\
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Images/Owasp.png" alt="">
+                    <div class="vertical-title">
+                        Member(Nov 2023-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam facere soluta, architecto quos
+                        dolorem veritatis reprehenderit! Debitis exercitationem ipsam beatae optio dolorem ullam
+                        incidunt, aspernatur similique quae adipisci id porro.\
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Images/saic.png" alt="">
+                    <div class="vertical-title">
+                        Publicity Head(Apr 2024-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam facere soluta, architecto quos
+                        dolorem veritatis reprehenderit! Debitis exercitationem ipsam beatae optio dolorem ullam
+                        incidunt, aspernatur similique quae adipisci id porro.\
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Images/saic.png" alt="">
+                    <div class="vertical-title">
+                        Publicity Head(Apr 2024-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam facere soluta, architecto quos
+                        dolorem veritatis reprehenderit! Debitis exercitationem ipsam beatae optio dolorem ullam
+                        incidunt, aspernatur similique quae adipisci id porro.\
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Designer', 'Programmer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

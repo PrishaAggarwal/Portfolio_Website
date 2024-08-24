@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(153, 153, 226);
+    font-size: 1.02rem;
+}
+
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1px;
+    margin: 60px 84px;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.firstSection>div {
+    width: 42%;
+}
+
+.leftSection {
+    font-size: 2.3rem;
+    /* margin: 70px 0; */
+}
+.info{
+    font-size:17px;
+    color: grey;
+}
+.resume-button{
+    /* background-color: rgb(170, 107, 228) ; */
+    margin-top: 25px;
+    background-image: linear-gradient( #9c97f1,rgb(170, 107, 228));
+    border-radius: 15px;
+    height : 60px;
+    width : 200px;
+    border:none;
+    font-size: 18px;
+    font-style: bold;
+}
+.resume-button:hover{
+    height: 65px;
+    width:205px;
+    box-shadow: 0 0 10px rgb(170, 123, 214);
+}
+.resume-button a {
+    color : white;
+    text-decoration: none;
+}
+.resume-button a:hover {
+    color : rgb(170, 123, 214);
+}
+.rightSection img {
+    width: 80%;
+    border-radius: 100%;
+    box-shadow:0 0px 10px  rgb(170, 107, 228);
+    /* border : 2px rgb(18, 18, 62) solid; */
+}
+
+.purple {
+    color: rgb(170, 107, 228);
+}
+
+.text-grey {
+    color: grey;
+}
+
+#element {
+    color: rgb(170, 107, 228);
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+}
+
+.secondSection .box {
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.secondSection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 100px;
+}
+
+.image-top {
+    width: 50px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+
+.vertical-title {
+    position: relative;
+    top: 75px;
+    width: 150px;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 86px;
+    color: grey;
+    width: 150px;
+    font-size: 9px;
+}
