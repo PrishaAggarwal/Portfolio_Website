@@ -50,7 +50,14 @@ main hr {
     height: 1px;
     margin: 60px 84px;
 }
-
+.smallinfo{
+    padding: 0;
+    margin-left: 0;
+    margin-top: 65px;
+    color:grey;
+    font-size: 14px;
+    display: flex;
+}
 .left {
     font-size: 1.5rem;
 }
@@ -70,9 +77,13 @@ main hr {
     font-size: 2.3rem;
     /* margin: 70px 0; */
 }
+
 .info{
     font-size:17px;
     color: grey;
+}
+.top-buttons{
+    display:flex;
 }
 .resume-button{
     /* background-color: rgb(170, 107, 228) ; */
@@ -85,6 +96,9 @@ main hr {
     font-size: 18px;
     font-style: bold;
 }
+.github{
+    margin-left:10px;
+}
 .resume-button:hover{
     height: 65px;
     width:205px;
@@ -94,9 +108,12 @@ main hr {
     color : white;
     text-decoration: none;
 }
-.resume-button a:hover {
-    color : rgb(170, 123, 214);
+.vertical-small-line {
+    padding: 10px;
+    border-left: 2px grey solid;
+    height : 120px;
 }
+
 .rightSection img {
     width: 80%;
     border-radius: 100%;
