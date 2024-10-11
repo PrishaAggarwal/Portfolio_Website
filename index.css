@@ -4,23 +4,31 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-
 }
 
 body {
-    background-color: rgb(0, 0, 33);
+    /* background-color: rgb(0, 0, 33); */
+    /* background-image: linear-gradient(rgb(0,0,33),rgb(153,153,226)); */
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
+.left-portfolio-header {
+    font-size: 1.5rem;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80px;
+    height: 12vh;
     background-color: rgb(18, 18, 62);
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 1;
 }
 
 nav ul {
@@ -44,12 +52,144 @@ nav ul li a:hover {
     font-size: 1.02rem;
 }
 
-main hr {
+/* main hr {
     border: 0;
     background: #9c97f1;
     height: 1px;
     margin: 60px 84px;
+} */
+
+/* .gap{
+    width: 100%;
+} */
+
+/* .cross-main{
+    margin-bottom:25%;
+    padding: 0;
+}  */
+
+/* .slash{
+    display: column;
+    justify-content: end;
+    align-items: end;
 }
+
+.slant_line{
+
+} */
+
+#firstSection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0,0,33),rgb(42, 42, 86),rgb(77, 77, 224));
+    padding-top: 5vh;
+}
+
+#firstSection>div {
+    width: 42%;
+}
+
+.vertical-small-line {
+    padding: 10px;
+    border-left: 2px grey solid;
+    height : 120px;
+}
+
+.rightSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .arrows-main{
+    display: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* .arrows-main{
+    display: column;
+    width: 1vh;
+    font-size: 3vh;
+    position: relative;
+    bottom: 35vh;
+    left: 15vh;
+    padding: 0;
+    margin: 0;
+}
+
+.arrows-main2{
+    display: column;
+    width: 1vh;
+    font-size: 3vh;
+    position: relative;
+    top:35vh;
+    left: 10vh;
+    padding: 0;
+    margin: 0;
+} */
+
+.rightSection img {
+    width: 80%;
+    /* background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Ffree-png-vectors%2Fpurple-circles&psig=AOvVaw0i9Mp3FFWuuie_pZ_gsJ7V&ust=1728669651007000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLj3qLayhIkDFQAAAAAdAAAAABAE");
+    border-radius: 100%; */
+    /* border-radius: 100%;
+    box-shadow:0 0px 10px  rgb(170, 107, 228); */
+    /* border : 2px rgb(18, 18, 62) solid; */
+}
+
+.rightSection .space-icon {
+    display: column;
+    align-items: center;
+    justify-content: start;
+    margin-left: 400%;
+}
+
+.rightSection .icon {
+    margin-left: 0;
+    margin-top: 20%;
+    padding-top: 3vh;
+}
+
+.rightSection a{
+    color:white;
+}
+
+.rightSection .icon a:hover {
+    /* color: rgb(153, 153, 226); */
+    /* font-size: 1.07rem; */
+    color:rgb(104, 104, 112);
+}
+
+.leftSection {
+    font-size: 2.3rem;
+    /* margin: 70px 0; */
+}
+
+
+.purple {
+    color: rgb(170, 107, 228);
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15vh;
+}
+
+.text-grey {
+    color: grey;
+}
+
+#element {
+    color: rgb(170, 107, 228);
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10vh;
+}
+
 .smallinfo{
     padding: 0;
     margin-left: 0;
@@ -58,29 +198,88 @@ main hr {
     font-size: 14px;
     display: flex;
 }
-.left {
-    font-size: 1.5rem;
+
+.discord{
+    padding-right: 100%;
 }
 
-.firstSection {
+.about-flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 50px 0;
+    margin: 0;
+    height:80vh;
+    background-image: linear-gradient(rgb(77, 77, 224),rgb(33, 33, 75),rgb(38, 38, 90));
 }
 
-.firstSection>div {
-    width: 42%;
+.about-flex>div {
+    width: 47%;
 }
 
-.leftSection {
-    font-size: 2.3rem;
-    /* margin: 70px 0; */
+
+.leftSection1 img{
+    width:90%;
+    border-radius: 50%;
+
+}
+
+.rightSection1{
+    margin-top: -10%;
+}
+
+/* .about-heading{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-heading>div{
+    width: 50%;
+} */
+
+.about-heading{
+    display: flex;
+    width: 35vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me{
+    /* background-color: rgb(77, 77, 224); */
+    font-size: 25vh;
+    color:white;
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 700;
+    font-style: normal;
+    position: relative;
+    left: 20vh;
+    top:10vh;
+    padding-bottom: 5vh;
+    white-space: nowrap;
+    z-index: 0;
+}
+
+.about-arrow{
+    font-size: 10vh;
+    padding-top:15vh;
+    padding-bottom: 15vh;
+    padding-left: 50vh;
+    margin: 0;
+    position: relative;
+    top:10vh;
+    z-index: 0;
+}
+
+h1{
+    line-height: 0.7;
 }
 
 .info{
-    font-size:17px;
+    font-size: 0.5vh;
     color: grey;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    margin-right: 10vh;
 }
 .top-buttons{
     display:flex;
@@ -90,8 +289,8 @@ main hr {
     margin-top: 25px;
     background-image: linear-gradient( #9c97f1,rgb(170, 107, 228));
     border-radius: 15px;
-    height : 60px;
-    width : 200px;
+    height : 10vh;
+    width : 30vh;
     border:none;
     font-size: 18px;
     font-style: bold;
@@ -108,32 +307,32 @@ main hr {
     color : white;
     text-decoration: none;
 }
-.vertical-small-line {
-    padding: 10px;
-    border-left: 2px grey solid;
-    height : 120px;
+
+#skills{
+    padding-top: 7vh;
+    height: 100vh;
+    background-image: linear-gradient(rgb(38,38,90),rgb(78, 78, 164),rgb(77, 77, 224));
 }
 
-.rightSection img {
-    width: 80%;
+.skills-heading{
+    color:white;
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20vh;
+    text-align: center;
+    padding-left: 3.4vh;
+}
+/* .circle_bg{
+    background-color: rgb(170, 123, 214);
     border-radius: 100%;
-    box-shadow:0 0px 10px  rgb(170, 107, 228);
-    /* border : 2px rgb(18, 18, 62) solid; */
-}
+    border: 2px;
+    width: 100vh;
+    height: 100vh;
+} */
 
-.purple {
-    color: rgb(170, 107, 228);
-}
 
-.text-grey {
-    color: grey;
-}
-
-#element {
-    color: rgb(170, 107, 228);
-}
-
-.secondSection {
+/* .secondSection {
     max-width: 80vw;
     margin: auto;
     height: 80vh;
@@ -177,4 +376,4 @@ main hr {
     color: grey;
     width: 150px;
     font-size: 9px;
-}
+} */

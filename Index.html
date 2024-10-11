@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Prisha's Portfolio</title>
     <link rel="stylesheet" href="index.css">
 </head>
@@ -14,14 +18,15 @@
 <body>
     <header>
         <nav>
-            <div class="left">
+            <div class="left-portfolio-header">
+                <i class="fa-solid fa-user"></i>
                 Portfolio
             </div>
             <div class="right">
                 <ul>
-                    <li><a href=".firstsection">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
+                    <li><a href="#firstSection">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="/">Projects</a></li>
                     <li><a href="/">Contact Me</a></li>
                 </ul>
@@ -30,21 +35,29 @@
     </header>
 
     <main>
-        <section class="firstSection">
+        <section id="firstSection">
+            <!-- <div class="slash">
+            <i class="fa-solid fa-slash fa-rotate-180 fa-2xl slant_line" style="color: #B197FC;"></i>
+            <i class="fa-solid fa-slash fa-rotate-180 fa-2xl slant_line" style="color: #B197FC;"></i>
+            <i class="fa-solid fa-slash fa-rotate-180 fa-2xl slant_line" style="color: #B197FC;"></i>
+            <i class="fa-solid fa-slash fa-rotate-180 fa-2xl slant_line" style="color: #B197FC;"></i>
+            </div> -->
             <div class="leftSection">
                 Hi, My name is
-                <div class="name">
-                    <span class="purple">Prisha Aggarwal</span>
-                </div>
-                <div>and I am a <span id="element"></span></div>
-                    <div class="smallinfo">
-                        <div class="vertical-small-line"></div>
-                        Student at Thapar Institute of Engineering and Technology<br>
-                        Computer Science Engineering 2027<br>
-                        Remember the two benefits of failure. If you do fail, you learn what doesn’t work and failure gives you the opportunity to try a new approach.<br>
-                        ~Roger Von Oech
+                    <div class="name">
+                        <span class="purple">Prisha Aggarwal</span>
                     </div>
-                </div>
+                    <div>and I am a <span id="element"></span></div>
+                        <div class="smallinfo">
+                            <div class="vertical-small-line"></div>
+                            Student at Thapar Institute of Engineering and Technology<br>
+                            Computer Science Engineering 2027<br>
+                            <br>
+                            Remember the two benefits of failure.<br>
+                            If you do fail, you learn what doesn’t work and failure gives you the opportunity to try a new approach.<br>
+                            ~Roger Von Oech
+                        </div>
+            </div>
                 <!-- <div class="info">
                     I'm a student currently enrolled at Thapar Institute of Technology. I have a keen interest in exploring diverse fields and expressing myself through my work. Excelling in both academics and sports, I find joy in delving into coding projects during my free time. Beyond my proficiency in coding, I possess talents in designing, marketing, painting, and writing poetry. To unwind, you might catch me playing the guitar. When it comes to writing, I believe it's not just a skill to acquire but a powerful tool for self-expression.
                 </div>
@@ -55,17 +68,55 @@
                 <div class="resume github">
                     <button class="resume-button"><a href="https://github.com/Pri34" target="_blank">Visit Github</a></button>
                 </div> -->
-            </div>
+                <!-- <i class="fa-solid fa-xmark fa-2xl cross-main"></i> -->
+                <div class="rightSection">
+                <!-- <span class="circle"></span> -->
+                <img src="Images/withoutbgpic_me.png" class="profile-img" alt="Profile">
+                <!-- <div class="circle_bg"></div> -->
+                <!-- <div class="arrows-main1">
+                    <div class="arrows-main">
+                        <i class="fa-solid fa-angle-up fa-flip-vertical fa-2xl" style="color: white;"></i>
+                        <i class="fa-solid fa-angle-up fa-flip-vertical fa-2xl" style="color: white;"></i>
+                        <i class="fa-solid fa-angle-up fa-flip-vertical fa-2xl" style="color: white;"></i>
+                    </div>
+                </div> -->
+                <div class="icons">
+                    <div class="space-icon">
+                    <div class="github icon"><a target="blank" href="https://github.com/Pri34"><i class="fa-brands fa-github fa-xl"></i></a></div>
+                    <div class="insta icon"><a target="blank" href="https://www.instagram.com/prisha_aggarwal.4/profilecard/?igsh=MXh2eWVzaGpqZ3ZoYQ=="><i class="fa-brands fa-instagram fa-xl"></i></a></div>
+                    <div class="linkedin icon"><a target="blank"  href="https://www.linkedin.com/in/prishaaggarwal/"><i class="fa-brands fa-linkedin  fa-xl"></i></a></div>
+                    <!-- <div class="discord icon"><a target="blank" href="/"><i class="fa-brands fa-discord fa-xl"></i></a></div>  -->
+                    </div>
+                </div>
+                <!-- <div class="arrows-main1">
+                    <div class="arrows-main2">
+                        <i class="fa-solid fa-angle-up fa-2xl" style="color: white;"></i>
+                        <i class="fa-solid fa-angle-up fa-2xl" style="color: white;"></i>
+                        <i class="fa-solid fa-angle-up fa-2xl" style="color: white;"></i>
+                    </div>
+                </div> -->
             </div>
 
-            <div class="rightSection">
-                <!-- <span class="circle"></span> -->
-                <img src="Images/Profile.jpg" class="profile-img" alt="Profile">
-            </div>
         </section>
-        <hr>
-        <section class="about">
+        <!-- <hr> -->
+        <section id="about">
+            <div class="about-flex">
+            <div class="leftSection1">
+                <img src="Images/codeimage.png" alt="Coding image" class="codeimage">
+            </div>
+            <div class="rightSection1">
+                <!-- <h1 class="about-me">
+                    About
+                    <br>
+                    Me
+                </h1>  -->
             <div class="info">
+                <div class="about-heading">
+                <h1 class="about-me">About Me</h1>
+                <!-- <i class="fa-solid fa-arrow-right fa-2xl about-arrow" style="color: #B197FC;"></i>  -->
+                <i class="fa-solid fa-code about-arrow" style="color: #B197FC;"></i>
+                <!-- <i class="fa-sharp fa-regular fa-grip-dots about-arrow fa-2xl" style="color:black;"></i> -->
+                </div>
                 I'm a student currently enrolled at Thapar Institute of Technology. I have a keen interest in exploring
                 diverse fields and expressing myself through my work. Excelling in both academics and sports, I find joy
                 in delving into coding projects during my free time. Beyond my proficiency in coding, I possess talents
@@ -84,6 +135,11 @@
                             Github</a></button>
                 </div>
             </div>
+        </div>
+        </div>
+        </section>
+        <section id="skills">
+            <h1 class="skills-heading">Skills</h1>
         </section>
         <!----   <section class="secondSection">
             <span class="text-grey">What I have done so far</span>
