@@ -28,7 +28,7 @@ nav {
     position: fixed;
     width: 100%;
     top:0;
-    z-index: 1;
+    z-index: 2;
 }
 
 nav ul {
@@ -83,9 +83,9 @@ nav ul li a:hover {
     justify-content: space-evenly;
     align-items: center;
     margin: 0;
-    height: 100vh;
+    height:80vh;
     background-image: linear-gradient(rgb(0,0,33),rgb(42, 42, 86),rgb(77, 77, 224));
-    padding-top: 5vh;
+    padding-top: 15vh;
 }
 
 #firstSection>div {
@@ -165,7 +165,7 @@ nav ul li a:hover {
 }
 
 .leftSection {
-    font-size: 2.3rem;
+    font-size: 5.8vh;
     /* margin: 70px 0; */
 }
 
@@ -208,8 +208,10 @@ nav ul li a:hover {
     justify-content: space-evenly;
     align-items: center;
     margin: 0;
-    height:80vh;
+    height:110vh;
     background-image: linear-gradient(rgb(77, 77, 224),rgb(33, 33, 75),rgb(38, 38, 90));
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .about-flex>div {
@@ -254,7 +256,7 @@ nav ul li a:hover {
     position: relative;
     left: 20vh;
     top:10vh;
-    padding-bottom: 5vh;
+    padding-bottom: 0vh;
     white-space: nowrap;
     z-index: 0;
 }
@@ -275,7 +277,7 @@ h1{
 }
 
 .info{
-    font-size: 0.5vh;
+    font-size: 2vh;
     color: grey;
     margin-bottom: 1vh;
     margin-top: 1vh;
@@ -309,12 +311,24 @@ h1{
 }
 
 #skills{
-    padding-top: 7vh;
-    height: 100vh;
+    margin: 0;
+    padding-top: 21vh;
+    height: 80vh;
     background-image: linear-gradient(rgb(38,38,90),rgb(78, 78, 164),rgb(77, 77, 224));
 }
 
-.skills-heading{
+#skills p{
+    padding-top: 6vh;
+    text-align: center;
+    padding-bottom: 6vh;
+}
+
+.skills-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#skills-heading{
     color:white;
     font-family: "Qwitcher Grypen", cursive;
     font-weight: 700;
@@ -322,7 +336,289 @@ h1{
     font-size: 20vh;
     text-align: center;
     padding-left: 3.4vh;
+    padding-top: 0;
+    margin-top: 0;
+    text-shadow: 0.2vh 0.2vh 1vh rgb(104, 104, 112);
 }
+
+.all-skills{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 6.7vh;
+}
+
+.frontend-skills{
+    width: 60vh;
+    height: 30vh;
+    border: 0.4vh rgb(170, 107, 228) solid;
+    border-radius: 5vh;
+    padding: 1vh 1vh;
+    box-shadow: 0.2vh 0.2vh 1vh rgb(153, 153, 226);
+}
+
+.frontend-skills h3{
+    text-align: center;
+    color: white;
+    font-size: 5vh;
+}
+
+.space-skills{
+    margin: 0.5vh;
+}
+
+
+.skills-relative{
+    z-index: 0;
+    position: relative;
+    left: 7vh;
+}
+
+.skills-relative:hover{
+    bottom: 3vh;
+}
+
+.skills-relative1{
+    z-index: 0;
+    position: relative;
+    right: 7vh;
+}
+
+.skills-relative1:hover{
+    bottom: 3vh;
+}
+
+.js {
+    display: flex;
+    border: grey 0.2vh solid;
+    border-radius: 2vh ;
+    padding: 1vh 2vh ;
+    color: white;
+    font-size: 2.4vh;
+}
+
+.logo-skills{
+    width: 3vh;
+    background-color: white;
+}
+
+.vs-logo{
+    width: 4.5vh;
+}
+
+.vs-heading{
+    padding-top: 0.5vh;
+}
+
+.vs{
+    padding: 1vh 1vh;
+}
+
+.js i{
+    padding-top: 0.6vh;
+}
+
+#projects{
+    margin: 0;
+    padding-top: 13vh;
+    padding-bottom: 0;
+    height: 330vh;
+    background-image: linear-gradient(rgb(77, 77, 224),rgb(63, 63, 140),rgb(40, 40, 122),rgb(39, 39, 78));
+}
+
+#projects-heading{
+    font-size: 20vh;
+    margin-left: 90vh;
+    color:white;
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#projects p{
+    margin-left: 125vh;
+    font-size: 0.5vh;
+    padding-bottom: 9vh;
+}
+
+/* .projects-flex{
+    display: column;
+    justify-content: center;
+    align-items: end;
+    margin-left: 100vh;
+} */
+
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom:10vh;
+}
+
+.project-info h3{
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.project-info h5{
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#project2-img{
+    width: 90vh;
+    height: 55vh;
+    border-radius: 3vh;
+    box-shadow: 1vh 1vh 1vh rgb(0,0,33);
+    position: relative;
+    z-index: 0;
+    right: 10vh;
+}
+
+.project-info2{
+    z-index: 1;
+    position: relative;
+    left: 15vh;
+    top: 2vh; 
+}
+
+.project-info2 h3{
+    font-size: 8vh;
+}
+
+.project-info2 h5 {
+    font-size: 3vh;
+    margin-left: 49vh;
+}
+
+#button-project2{
+    border-radius: 100%;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    font-size: 4vh;
+    width: 6vh;
+    height: 6vh;
+    z-index: 0;
+    position: relative;
+    right: 25.5vh;
+    border: 0;
+}
+
+.project3-img{
+    width: 70vh;
+    height: 40vh;
+    border-radius: 3vh;
+    box-shadow: -1vh 1vh 1vh rgb(0,0,33);
+    position: relative;
+    z-index: 0;
+    left: 11.2vh;
+}
+
+.project-info3{
+    z-index: 1;
+    position: relative;
+    right: 15vh;
+    top: 1.7vh; 
+}
+
+.project-info3 h3{
+    font-size: 8vh;
+    color: black;
+    font-weight: 600;
+}
+      
+.project-info3 h5 {
+    font-size: 3vh;
+    margin-left: 48vh;
+    color: black;
+}
+
+
+.project4-img{
+    width: 80vh;
+    height: 50vh;
+    border-radius: 3vh;
+    box-shadow: 1vh 1vh 1vh rgb(0,0,33);
+    position: relative;
+    z-index: 0;
+    right: 10vh;
+}
+
+.project-info4{
+    z-index: 1;
+    position: relative;
+    left: 15vh;
+    top: 4vh; 
+}
+
+.project-info4 h3{
+    font-size: 8vh;
+}
+      
+.project-info4 h5 {
+    font-size: 3vh;
+    margin-left: 39vh;
+}
+
+.project5-img{
+    width: 90vh;
+    height: 50vh;
+    border-radius: 3vh;
+    box-shadow: -1vh 1vh 1vh rgb(0,0,33);
+    position: relative;
+    z-index: 0;
+    left: 10vh;
+}
+
+.project-info5{
+    z-index: 1;
+    position: relative;
+    right: 20vh;
+    top: 8vh; 
+}
+
+.project-info5 h3{
+    font-size: 8vh;
+    color: black;
+    font-weight: 600;
+}
+      
+.project-info5 h5 {
+    font-size: 3vh;
+    margin-left: 47vh;
+    color: black;
+}
+
+.project6-img{
+    width: 80vh;
+    height: 50vh;
+    border-radius: 3vh;
+    box-shadow: 1vh 1vh 1vh rgb(0,0,33);
+    position: relative;
+    z-index: 0;
+    right: 10vh;
+}
+
+.project-info6{
+    z-index: 1;
+    position: relative;
+    left: 16vh;
+    top: 6vh; 
+}
+
+.project-info6 h3{
+    font-size: 8vh;
+}
+      
+.project-info6 h5 {
+    font-size: 3vh;
+    margin-left: 47vh;
+}
+
+
 /* .circle_bg{
     background-color: rgb(170, 123, 214);
     border-radius: 100%;
