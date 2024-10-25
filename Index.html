@@ -31,7 +31,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -190,20 +190,21 @@
         </section>
         <section id="projects">
             <div id="projects-heading">My Projects</div>
-            <p>(Clicking on the projects opens them)</p>
+            <p>(To visit the projects, click on the the image of project)</p>
             <div class="projects-flex">
                  <div class="project">   <!--thapar socities -->
                     <div class="project-info project-info2">  
-                        <h3>Thapar Socities Site</h3>
+                        <h3>Thapar Societies Site</h3>
                         <h5>July 2024</h5>
                     </div>
                     <a href="https://pri34.github.io/ThaparSocietiesSite/" target="_blank">
-                        <img src="Images/Thapar_Societies_Site.png" alt="Thapar_Socieites_Site" id="project2-img">
+                        <img src="Images/Thapar_Societies_Site.png" alt="Thapar_Socieites_Site" id="project2-img" class="hover">
                     </a>
                     <button id="button-project2">></button>
                 </div>
                 <div class="project">   <!--leads tracker app-->
-                    <a href="https://pri34.github.io/Chrome_Extension/" target="_blank"><img src="Images/Leads_Tracker.png" alt="Link_Saver_Extension" class="project3-img"></a>
+                    <button id="button-project3"><</button>
+                    <a href="https://pri34.github.io/Chrome_Extension/" target="_blank"><img src="Images/porject_3.png" alt="Link_Saver_Extension" class="project3-img hover" ></a>
                     <div class="project-info project-info3">
                         <h3>Link Saver Extension</h3>
                         <h5>August 2024</h5>
@@ -215,7 +216,8 @@
                         <h3>Black Jack Game</h3>
                         <h5>July 2024</h5>
                     </div>
-                    <a href="https://pri34.github.io/Blackjack_Game/" target="_blank"><img src="Images/Blackjack_Game.png" alt="Black_Jack_Game" class="project4-img"></a>
+                    <a href="https://pri34.github.io/Blackjack_Game/" target="_blank"><img src="Images/project4_1.png" alt="Black_Jack_Game" class="project4-img hover"></a>
+                    <button id="button-project4">></button>
                 </div>
                 <!-- <div class="project">  small calculator
                     <div class="project-info">
@@ -225,7 +227,7 @@
                     <a href="/" target="_blank"><img src="" alt=""></a>
                 </div> -->
                 <div class="project">  <!--.people counter app-->
-                    <a href="https://pri34.github.io/JS_First_Site/" target="_blank"><img src="Images/People_counter_App.png" alt="People_Counter_Site" class="project5-img"></a>
+                    <a href="https://pri34.github.io/JS_First_Site/" target="_blank"><img src="Images/People_counter_App.png" alt="People_Counter_Site" class="project5-img hover"></a>
                     <div class="project-info project-info5">
                         <h3>People Counter Site</h3>
                         <h5>July 2024</h5>
@@ -236,66 +238,72 @@
                             <h3>Happy Birthday Site</h3>
                             <h5>June 2024</h5>
                         </div>
-                        <a href="https://site4happybirthday.netlify.app/" target="_blank"><img src="Images/Birthday Site.png" alt="Birthday_Site_Picture" class="project6-img"></a>
+                        <a href="https://site4happybirthday.netlify.app/" target="_blank"><img src="Images/Birthday Site.png" alt="Birthday_Site_Picture" class="project6-img hover"></a>
+                        <button id="button-project6">></button>
                     </div>
             </div>
         </section>
-        <!----   <section class="secondSection">
-            <span class="text-grey">What I have done so far</span>
-            <h1>Work Experience</h1>
-            <div class="box">
-                <div class="vertical">
-                    <img class="image-top" src="Images/saic.png" alt="">
-                    <div class="vertical-title">
-                        Member(Sept 2023-Apr 2024)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam facere soluta, architecto quos
-                        dolorem veritatis reprehenderit! Debitis exercitationem ipsam beatae optio dolorem ullam
-                        incidunt, aspernatur similique quae adipisci id porro.\
-                    </div>
+        <section id="contact-me">
+            <div class="me-heading">Contact Me...</div>
+            <div class="form">
+            <form
+                action="https://formspree.io/f/xldedkrd"
+                method="POST">
+                <div class="name-me">
+                    <label id="label-name">
+                        Full Name*
+                    </label>
+                    <input class="write" type="text" name="Name:" placeholder="Enter your Full Name">
                 </div>
-                <div class="vertical">
-                    <img class="image-top" src="Images/Owasp.png" alt="">
-                    <div class="vertical-title">
-                        Member(Nov 2023-Present)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam facere soluta, architecto quos
-                        dolorem veritatis reprehenderit! Debitis exercitationem ipsam beatae optio dolorem ullam
-                        incidunt, aspernatur similique quae adipisci id porro.\
-                    </div>
+                <div class="name-me">
+                    <label id="label-name">
+                        Email*
+                    </label>
+                    <br>
+                    <input class="write" type="email" name="Email" placeholder="Enter your Email ID">
                 </div>
-                <div class="vertical">
-                    <img class="image-top" src="Images/saic.png" alt="">
-                    <div class="vertical-title">
-                        Publicity Head(Apr 2024-Present)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam facere soluta, architecto quos
-                        dolorem veritatis reprehenderit! Debitis exercitationem ipsam beatae optio dolorem ullam
-                        incidunt, aspernatur similique quae adipisci id porro.\
-                    </div>
+                <div class="name-me">
+                    <label id="label-name">
+                        Your  Message*
+                    </label>
+                    <br>
+                    <textarea class="write-message" name="message" placeholder="Enter the Message"></textarea>
                 </div>
-                <div class="vertical">
-                    <img class="image-top" src="Images/saic.png" alt="">
-                    <div class="vertical-title">
-                        Publicity Head(Apr 2024-Present)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam facere soluta, architecto quos
-                        dolorem veritatis reprehenderit! Debitis exercitationem ipsam beatae optio dolorem ullam
-                        incidunt, aspernatur similique quae adipisci id porro.\
-                    </div>
+            <button id="contact" type="submit">Submit</button>
+            </form>
+        </div>
+        </section>
+        <Footer>
+            <div class="footer-left">
+                <p class=prisha-footer>Prisha Aggarwal</p>
+                <div class="footer-icons">
+                    <div class="github icon1"><a target="blank" href="https://github.com/Pri34"><i class="fa-brands fa-github fa-xl"></i></a></div>
+                    <div class="insta icon1"><a target="blank" href="https://www.instagram.com/prisha_aggarwal.4/profilecard/?igsh=MXh2eWVzaGpqZ3ZoYQ=="><i class="fa-brands fa-instagram fa-xl"></i></a></div>
+                    <div class="linkedin icon1"><a target="blank"  href="https://www.linkedin.com/in/prishaaggarwal/"><i class="fa-brands fa-linkedin  fa-xl"></i></a></div>
                 </div>
             </div>
-        </section> -->
+            <div class="footer-right">
+                <div class="footer-nav">
+                <ul>
+                    <a href="#firstSection">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact-me">Contact Me</a>
+                </ul>
+                </div>
+                <p class="end">@2024 Prisha Aggarwal. All Rights Reserved.</div>
+            </div>
+        </Footer>
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
             strings: ['Web Developer', 'Designer', 'Programmer'],
-            typeSpeed: 50,
+            typeSpeed: 70,
+            backSpeed:60,
+            backDelay:1000,
+            loop:true
         });
     </script>
     <script src="index.js"></script>
