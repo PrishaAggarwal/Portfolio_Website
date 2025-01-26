@@ -348,6 +348,13 @@ h1{
     padding-top: 6.7vh;
 }
 
+.other_skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:1vh;
+}
+
 .frontend-skills{
     width: 60vh;
     height: 30vh;
