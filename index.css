@@ -184,7 +184,7 @@ nav ul li a:hover {
 
 #element {
     color: rgb(170, 107, 228);
-    font-family: "Qwitcher Grypen", cursive;
+    font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 10vh;
@@ -830,4 +830,259 @@ Footer a{
 
 .footer-right{
     margin-left: 35vh;
+}
+
+/* Final overrides for the refreshed cards. */
+#skills { height: auto; min-height: 100vh; padding: 12vh 8vw; }
+#projects { height: auto; min-height: 100vh; padding: 12vh 8vw; }
+#skills-heading, #projects-heading { font-size: clamp(4.5rem, 11vw, 9rem); margin: 0; text-align: center; }
+#skills p, #projects p { margin: 0 auto 5vh; max-width: 700px; text-align: center; font-size: clamp(0.9rem, 1.4vw, 1.1rem); line-height: 1.6; }
+.skills-flex { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; max-width: 1200px; margin: 0 auto; }
+.projects-flex { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.25rem; max-width: 1200px; margin: 0 auto; }
+.skill-card, .project { box-sizing: border-box; border: 1px solid rgba(220, 202, 255, 0.5); border-radius: 20px; background: rgba(19, 19, 62, 0.35); box-shadow: 0 8px 24px rgba(13, 9, 50, 0.2); }
+.skill-card { padding: 1.5rem; }
+.skill-card, .experience-card { transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease, background-color 180ms ease; }
+.skill-card:hover, .skill-card:focus-within, .experience-card:hover, .experience-card:focus-within {
+    transform: translateY(-5px);
+    border-color: #e0caff;
+    background: rgba(19, 19, 62, 0.5);
+    box-shadow: 0 14px 30px rgba(13, 9, 50, 0.28);
+}
+.skill-card > i, .project-icon { color: #d5b6ff; font-size: 1.8rem; }
+.skill-card h3 { color: white; font-size: 1.3rem; margin: 0.75rem 0 0.5rem; }
+.skill-card p { margin: 0; text-align: left !important; font-size: 0.95rem !important; }
+.project { display: block; min-height: 265px; padding: 1.6rem; transition: transform 0.2s ease, border-color 0.2s ease; }
+.project:hover { transform: translateY(-6px); border-color: #e0caff; }
+.project span { display: block; color: #d5b6ff; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.07em; margin: 1rem 0 0.4rem; text-transform: uppercase; }
+.project h3 { color: white; font-family: "Poppins", sans-serif; font-size: 1.25rem; margin: 0 0 0.75rem; }
+.project p { font-size: 0.92rem !important; margin: 0 0 1rem !important; text-align: left !important; }
+.project small { color: #d5b6ff; font-weight: 700; }
+.project a { color: white; display: inline-block; font-weight: 700; margin-top: 1rem; text-decoration: none; }
+@media (max-width: 600px) { #skills, #projects { padding: 10vh 1.25rem; } #skills-heading, #projects-heading { font-size: 4.5rem; } }
+
+/* Current skills and project portfolio */
+#skills {
+    height: auto;
+    min-height: 100vh;
+    padding: 12vh 8vw;
+    background-image: linear-gradient(rgb(77, 77, 224), rgb(78, 78, 164), rgb(77, 77, 224));
+}
+
+#skills p, #projects p {
+    margin: 0 auto 5vh;
+    max-width: 700px;
+    text-align: center;
+    font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+    line-height: 1.6;
+}
+
+#skills-heading, #projects-heading {
+    font-size: clamp(4.5rem, 11vw, 9rem);
+    margin: 0;
+    text-align: center;
+}
+
+.skills-flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-card, .project {
+    box-sizing: border-box;
+    border: 1px solid rgba(220, 202, 255, 0.5);
+    border-radius: 20px;
+    background: rgba(19, 19, 62, 0.35);
+    box-shadow: 0 8px 24px rgba(13, 9, 50, 0.2);
+}
+
+.skill-card { padding: 1.5rem; }
+.skill-card > i, .project-icon { color: #d5b6ff; font-size: 1.8rem; }
+.skill-card h3 { color: white; font-size: 1.3rem; margin: 0.75rem 0 0.5rem; }
+.skill-card p { margin: 0; text-align: left !important; font-size: 0.95rem !important; }
+
+#projects {
+    height: auto;
+    min-height: 100vh;
+    padding: 12vh 8vw;
+}
+
+.projects-flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.25rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project {
+    display: block;
+    min-height: 265px;
+    padding: 1.6rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project:hover { transform: translateY(-6px); border-color: #e0caff; }
+.project span { display: block; color: #d5b6ff; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.07em; margin: 1rem 0 0.4rem; text-transform: uppercase; }
+.project h3 { color: white; font-family: "Poppins", sans-serif; font-size: 1.25rem; margin: 0 0 0.75rem; }
+.project p { font-size: 0.92rem !important; margin: 0 0 1rem !important; text-align: left !important; }
+.project small { color: #d5b6ff; font-weight: 700; }
+.project a { color: white; display: inline-block; font-weight: 700; margin-top: 1rem; text-decoration: none; }
+
+@media (max-width: 600px) {
+    #skills, #projects { padding: 10vh 1.25rem; }
+    #skills-heading, #projects-heading { font-size: 4.5rem; }
+}
+
+/* Responsive layout: tablets and phones */
+html { scroll-behavior: smooth; }
+body { overflow-x: hidden; }
+
+@media (max-width: 1100px) {
+    #firstSection, .about-flex { height: auto; min-height: 100vh; padding-left: 6vw; padding-right: 6vw; }
+    .rightSection .space-icon { margin-left: 0; }
+    .form { width: min(82vw, 700px); margin-left: auto; margin-right: auto; }
+    .me-heading { margin-left: 0; text-align: center; }
+    .footer-left { margin-left: 8vw; }
+    .footer-right { margin-left: auto; margin-right: 8vw; }
+}
+
+@media (max-width: 768px) {
+    nav { height: auto; min-height: 70px; padding: 0.75rem 1rem; box-sizing: border-box; flex-direction: column; gap: 0.55rem; }
+    .left-portfolio-header { font-size: 1.25rem; }
+    nav ul { flex-wrap: wrap; gap: 0.55rem 1rem; }
+    nav ul li { margin: 0; font-size: 0.86rem; }
+
+    #firstSection { flex-direction: column; gap: 2rem; padding: 145px 1.5rem 3.5rem; min-height: auto; }
+    #firstSection > div, .about-flex > div { width: 100%; }
+    .leftSection { font-size: clamp(1.5rem, 7vw, 2.4rem); text-align: center; }
+    .purple { display: block; font-size: clamp(4.5rem, 21vw, 7rem); line-height: 0.75; margin: 0.5rem 0 1.25rem; }
+    #element { font-size: clamp(3.25rem, 15vw, 5rem); }
+    .smallinfo { margin-top: 2rem; font-size: 0.85rem; line-height: 1.55; text-align: left; }
+    .vertical-small-line { height: auto; min-height: 115px; padding: 0 0.75rem 0 0; flex-shrink: 0; }
+    .rightSection { flex-direction: column; }
+    .rightSection img { width: min(78vw, 350px); }
+    .rightSection .space-icon { display: flex; gap: 1.4rem; margin: 1rem 0 0; }
+    .rightSection .icon { margin: 0; padding: 0; }
+
+    .about-flex { flex-direction: column; gap: 2rem; padding: 3.5rem 1.5rem; min-height: auto; }
+    .leftSection1 { text-align: center; }
+    .leftSection1 img { width: min(78vw, 350px); }
+    .rightSection1 { margin-top: 0; }
+    .about-heading { width: auto; justify-content: center; }
+    .about-me { position: static; font-size: clamp(4.25rem, 21vw, 7rem); white-space: normal; }
+    .about-arrow { display: none; }
+    .info { font-size: 1rem; line-height: 1.65; margin: 1rem 0; text-align: left; }
+    .top-buttons { justify-content: center; flex-wrap: wrap; gap: 0.75rem; }
+    .github { margin-left: 0; }
+    .resume-button { width: 160px; height: 52px; margin-top: 0.5rem; font-size: 0.95rem; }
+    .resume-button:hover { width: 160px; height: 52px; }
+
+    #skills, #projects { padding: 4.5rem 1.25rem; min-height: auto; }
+    #skills-heading, #projects-heading { font-size: clamp(4rem, 19vw, 6.5rem); }
+    #skills p, #projects p { margin-bottom: 2rem; }
+    .skills-flex, .projects-flex { grid-template-columns: 1fr; }
+    .project { min-height: auto; }
+
+    #contact-me { height: auto; padding: 4.5rem 1.25rem; }
+    .me-heading { padding-top: 0; font-size: clamp(4rem, 19vw, 6.5rem); text-align: center; }
+    .form { box-sizing: border-box; width: 100%; max-width: 560px; height: auto; margin: 2rem auto 0; padding: 1rem; }
+    #label-name { font-size: 1rem; }
+    .name-me { padding: 0.75rem 0; }
+    .write, .write-message { box-sizing: border-box; width: 100%; margin: 0.65rem 0; height: auto; min-height: 46px; }
+    .write-message { min-height: 160px; }
+    #contact { display: block; margin: 0.75rem auto 0; padding: 0.85rem 2.5rem; }
+
+    Footer { height: auto; min-height: 180px; padding: 2rem 1.5rem; box-sizing: border-box; flex-direction: column; align-items: center; gap: 1.5rem; }
+    .footer-left, .footer-right { margin: 0; text-align: center; }
+    .prisha-footer { margin: 0 0 1rem; }
+    .footer-icons { gap: 1.5rem; }
+    .icon1 { margin-left: 0; }
+    .footer-nav { margin-top: 0; }
+    .footer-nav ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1rem; }
+    .footer-nav a { padding-left: 0; font-size: 0.85rem; }
+    .end { margin: 1rem 0 0; font-size: 0.8rem; }
+}
+
+/* Keep the transparent hero portrait balanced with the introduction text. */
+.rightSection .profile-img { width: min(56%, 390px); }
+
+@media (max-width: 768px) {
+    .rightSection .profile-img { width: min(60vw, 280px); }
+}
+
+/* Keep the rotating role titles on one line at every screen width. */
+#element {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: clamp(1.4rem, 3vw, 3rem);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: rgb(170, 107, 228);
+    letter-spacing: -0.02em;
+}
+
+/* Keep the entire animated profession sentence together on one line. */
+.role-line { white-space: nowrap; }
+
+@media (max-width: 768px) {
+    #element { font-size: clamp(1.65rem, 7vw, 2.5rem); }
+}
+
+/* Hero social links stay pinned to the right edge of the page. */
+#firstSection { position: relative; }
+.rightSection { position: static; }
+.rightSection .icons { position: absolute; right: 2rem; top: 50%; transform: translateY(-50%); }
+.rightSection .space-icon { display: flex; flex-direction: column; gap: 1.25rem; margin-left: 0; }
+.rightSection .icon { margin: 0; padding: 0; }
+
+/* Experience follows About and uses the same responsive card design as Skills. */
+#experience {
+    min-height: 100vh;
+    padding: 12vh 8vw;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgb(38, 38, 90), rgb(78, 78, 164), rgb(77, 77, 224));
+}
+
+#experience-heading {
+    margin: 0;
+    color: white;
+    font-family: "Qwitcher Grypen", cursive;
+    font-size: clamp(4.5rem, 11vw, 9rem);
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0.2vh 0.2vh 1vh rgb(104, 104, 112);
+}
+
+#experience > p {
+    max-width: 700px;
+    margin: 0 auto 5vh;
+    text-align: center;
+    font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+    line-height: 1.6;
+}
+
+.experience-flex { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; max-width: 1200px; margin: 0 auto; }
+.experience-card { box-sizing: border-box; padding: 1.6rem; border: 1px solid rgba(220, 202, 255, 0.5); border-radius: 20px; background: rgba(19, 19, 62, 0.35); box-shadow: 0 8px 24px rgba(13, 9, 50, 0.2); }
+.experience-card > i { color: #d5b6ff; font-size: 1.8rem; margin-bottom: 1rem; }
+.experience-card-header { display: flex; gap: 1rem; justify-content: space-between; }
+.experience-card h3 { margin: 0; color: white; font-size: 1.15rem; line-height: 1.4; }
+.experience-card h4 { margin: 0.4rem 0 0; color: #d5b6ff; font-size: 0.9rem; font-style: italic; font-weight: 600; }
+.experience-meta { min-width: 155px; color: white; font-size: 0.78rem; text-align: right; }
+.experience-meta strong, .experience-meta span { display: block; }
+.experience-meta span { margin-top: 0.35rem; color: #d5b6ff; }
+.experience-card p { margin: 1.25rem 0; color: white; font-size: 0.92rem; line-height: 1.65; }
+.experience-card small { color: #d5b6ff; font-weight: 700; }
+
+@media (max-width: 768px) {
+    .rightSection .icons { position: static; transform: none; }
+    .rightSection .space-icon { flex-direction: row; }
+    #experience { min-height: auto; padding: 4.5rem 1.25rem; }
+    #experience-heading { font-size: clamp(4rem, 19vw, 6.5rem); }
+    #experience > p { margin-bottom: 2rem; }
+    .experience-flex { grid-template-columns: 1fr; }
+    .experience-card-header { flex-direction: column; }
+    .experience-meta { text-align: left; }
 }
