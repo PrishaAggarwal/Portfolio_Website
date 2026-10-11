@@ -1205,3 +1205,6 @@ Footer {
 @media (min-width: 769px) {
     .rightSection1 .top-buttons { transform: translateX(-5vw); }
 }
+
+/* Improve contrast for the biography and introductory note. */
+.about-flex .info, .smallinfo { color: black; }
