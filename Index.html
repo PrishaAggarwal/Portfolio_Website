@@ -34,9 +34,11 @@
                 <ul>
                     <li><a href="#firstSection">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#leadership">Leadership</a></li>
                     <li><a href="#contact-me">Contact Me</a></li>
                 </ul>
             </div>
@@ -135,9 +137,10 @@
             </div>
             <div class="top-buttons">
                 <div class="resume">
-                    <button class="resume-button"><a
-                            href="https://drive.google.com/file/d/1EzcaAlX9v_jJAZfuVmJqRMvxi3lDs9EQ/view?usp=sharing"
-                            target="_blank">Check Resume</a></button>
+                    <button class="resume-button"><a href="resumes/Prisha_Aggarwal_Software_Resume.pdf" target="_blank" rel="noopener noreferrer">Software Resume</a></button>
+                </div>
+                <div class="resume github">
+                    <button class="resume-button"><a href="resumes/Prisha_Aggarwal_Analyst_Resume.pdf" target="_blank" rel="noopener noreferrer">Analyst Resume</a></button>
                 </div>
                 <div class="resume github">
                     <button class="resume-button"><a href="https://github.com/PrishaAggarwal" target="_blank">Visit
@@ -146,6 +149,33 @@
             </div>
         </div>
         </div>
+        </section>
+        <section id="education">
+            <h1 id="education-heading">Education...</h1>
+            <p>Academic foundations that support my work in software engineering, data, and artificial intelligence.</p>
+            <div class="education-flex">
+                <article class="education-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>Thapar Institute of Engineering and Technology</h3>
+                    <h4>B.E. Computer Engineering</h4>
+                    <p>CGPA: 8.59</p>
+                    <small>Jul 2023 - Present · Patiala, Punjab</small>
+                </article>
+                <article class="education-card">
+                    <i class="fa-solid fa-school"></i>
+                    <h3>MGN Public School</h3>
+                    <h4>Senior Secondary, XII</h4>
+                    <p>90.2% · JEE Mains: 93.96 percentile</p>
+                    <small>2021 - 2023 · Jalandhar, Punjab</small>
+                </article>
+                <article class="education-card">
+                    <i class="fa-solid fa-book-open"></i>
+                    <h3>Cambridge International School for Girls</h3>
+                    <h4>High Secondary, X</h4>
+                    <p>94.2%</p>
+                    <small>2008 - 2021 · Jalandhar, Punjab</small>
+                </article>
+            </div>
         </section>
         <section id="experience">
             <h1 id="experience-heading">Experience...</h1>
@@ -160,7 +190,7 @@
                         </div>
                         <div class="experience-meta"><strong>Jun 2025 – Aug 2025</strong><span>Delhi</span></div>
                     </div>
-                    <p>Built a real-time student attentiveness detection system using Python, OpenCV, and facial-emotion and eye-gaze tracking, generating a quantitative attentiveness index from live classroom video data.</p>
+                    <p>Built a real-time student attentiveness detection system using Python and OpenCV, extracting gaze, head-pose, and eye-openness features and training a multiclass Logistic Regression model to classify attentive, distracted, and sleepy states with 89% accuracy.</p>
                     <small>Python · OpenCV · Computer Vision</small>
                 </article>
                 <article class="experience-card">
@@ -181,10 +211,12 @@
             <h1 id="skills-heading">Skills...</h1>
             <p>Building intelligent software with the right technologies.</p>
             <div class="skills-flex">
-                <article class="skill-card"><i class="fa-solid fa-code"></i><h3>Languages</h3><p>Python, C++, C, JavaScript, HTML/CSS, R, SQL</p></article>
-                <article class="skill-card"><i class="fa-solid fa-brain"></i><h3>AI &amp; Machine Learning</h3><p>Machine Learning, Deep Learning, CNNs, RNNs, LSTMs, GRUs, Transformers, GANs, NLP</p></article>
-                <article class="skill-card"><i class="fa-solid fa-layer-group"></i><h3>Frameworks &amp; Tools</h3><p>TensorFlow, Keras, OpenCV, NumPy, Pandas, Matplotlib, Jupyter Notebook, Git/GitHub, Linux</p></article>
-                <article class="skill-card"><i class="fa-solid fa-database"></i><h3>CS Fundamentals</h3><p>DSA, OOP, DBMS, Operating Systems, Computer Networks, Arduino, AutoCAD</p></article>
+                <article class="skill-card"><i class="fa-solid fa-code"></i><h3>Programming &amp; Web</h3><p>Python, C++, C, JavaScript, HTML/CSS</p></article>
+                <article class="skill-card"><i class="fa-solid fa-chart-line"></i><h3>Data &amp; Analytics</h3><p>SQL, Excel, Google Sheets, Pandas, NumPy, Matplotlib</p></article>
+                <article class="skill-card"><i class="fa-solid fa-brain"></i><h3>AI/ML &amp; Computer Vision</h3><p>Machine Learning, Deep Learning, Transformers, GANs, CNNs, RNNs, LSTMs, GRUs, Computer Vision, NLP, TensorFlow, Keras, OpenCV</p></article>
+                <article class="skill-card"><i class="fa-solid fa-database"></i><h3>Core Computer Science</h3><p>Data Structures &amp; Algorithms, Object-Oriented Programming, DBMS, Operating Systems</p></article>
+                <article class="skill-card"><i class="fa-solid fa-screwdriver-wrench"></i><h3>Developer Tools</h3><p>Git, GitHub, VS Code, AutoCAD</p></article>
+                <article class="skill-card"><i class="fa-solid fa-people-group"></i><h3>Professional &amp; Creative</h3><p>Public Speaking, Leadership, Project Planning &amp; Management, Adobe Photoshop</p></article>
             </div>
         </section>
         <section id="projects">
@@ -193,11 +225,32 @@
             <div class="projects-flex">
                 <article class="project"><i class="fa-solid fa-microscope project-icon"></i><span>Medical AI</span><h3>FistulaNet: MRI Fistula Diagnosis</h3><p>Deep-learning system for MRI analysis, perianal fistula detection, and post-treatment healing prediction.</p><small>Python · TensorFlow · OpenCV</small><a href="https://github.com/PrishaAggarwal/Fistula-Net" target="_blank" rel="noopener noreferrer">View on GitHub <i class="fa-brands fa-github"></i></a></article>
                 <article class="project"><i class="fa-solid fa-wallet project-icon"></i><span>Database System</span><h3>CampusPay</h3><p>Secure campus payment platform for wallet management, top-ups, peer-to-peer transfers, and transaction tracking.</p><small>MySQL · Python</small><a href="https://github.com/PrishaAggarwal/DBMS_Campus_Pay" target="_blank" rel="noopener noreferrer">View on GitHub <i class="fa-brands fa-github"></i></a></article>
+                <article class="project"><i class="fa-solid fa-chart-column project-icon"></i><span>Data Analytics</span><h3>Bike Sales &amp; Customer Analytics Dashboard</h3><p>Cleaned and analyzed customer sales data in Excel, using pivot tables, charts, and interactive slicers to identify purchasing patterns across demographic and behavioral segments.</p><small>Excel · Pivot Tables · Data Visualization</small></article>
                 <article class="project"><i class="fa-solid fa-fingerprint project-icon"></i><span>Patent Project</span><h3>Secure Biometric USB Drive</h3><p>Designed a secure USB drive incorporating fingerprint-based biometric authentication and storage-level monitoring using AutoCAD; design registered and published (Application No. 460865-001; Journal No. 16/2026).</p><small>AutoCAD · Biometrics</small></article>
                 <article class="project"><i class="fa-solid fa-lungs project-icon"></i><span>Deep Learning</span><h3>Pneumonia Detection</h3><p>CNN-based TensorFlow model for automated pneumonia detection from chest X-rays, reaching 90% validation accuracy.</p><small>TensorFlow · CNN</small></article>
                 <article class="project"><i class="fa-solid fa-diagram-project project-icon"></i><span>Natural Language Processing</span><h3>MindForge</h3><p>NLP-based mind-map generator that extracts entities and relationships from text to build structured visual maps.</p><small>Python · NLTK</small><a href="https://github.com/Gurmandeep-Kaur/MindForge" target="_blank" rel="noopener noreferrer">View on GitHub <i class="fa-brands fa-github"></i></a></article>
                 <article class="project"><i class="fa-solid fa-car-side project-icon"></i><span>Embedded Systems</span><h3>Autonomous Buggy</h3><p>Arduino-powered buggy supporting real-time navigation, obstacle avoidance, and automated parking.</p><small>Arduino · Sensors</small></article>
                 <article class="project"><i class="fa-solid fa-users project-icon"></i><span>Web Development</span><h3>Thapar Societies Website</h3><p>Centralized platform that helps freshers discover societies and events, built with a three-member team during an OWASP hackathon.</p><a href="https://prishaaggarwal.github.io/ThaparSocietiesSite/" target="_blank" rel="noopener noreferrer">View project <i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
+            </div>
+        </section>
+        <section id="leadership">
+            <h1 id="leadership-heading">Leadership...</h1>
+            <p>Bringing structure, ownership, and clear communication to student-led initiatives.</p>
+            <div class="leadership-flex">
+                <article class="leadership-card">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Class Representative</h3>
+                    <h4>Thapar Institute of Engineering and Technology</h4>
+                    <p>Coordinate communication between 140+ students and faculty, consolidate concerns, and manage requests and priorities to help resolve academic issues on time.</p>
+                    <small>Aug 2024 - Present</small>
+                </article>
+                <article class="leadership-card">
+                    <i class="fa-solid fa-handshake"></i>
+                    <h3>Executive Member &amp; OEC</h3>
+                    <h4>Student Alumni Interaction Cell</h4>
+                    <p>Coordinated end-to-end execution of alumni events, managing timelines, responsibilities, communication, and execution blockers to deliver events on schedule.</p>
+                    <small>Jan 2025 - Dec 2025</small>
+                </article>
             </div>
         </section>
         <section id="contact-me">
@@ -244,9 +297,11 @@
                 <ul>
                     <a href="#firstSection">Home</a>
                     <a href="#about">About</a>
+                    <a href="#education">Education</a>
                     <a href="#experience">Experience</a>
                     <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
+                    <a href="#leadership">Leadership</a>
                     <a href="#contact-me">Contact Me</a>
                 </ul>
                 </div>
@@ -257,7 +312,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['AI Engineer', 'ML Engineer', 'Software&nbsp;Engineer'],
+            strings: ['AI/ML Engineer', 'Software Engineer', 'Data Analyst'],
             contentType: 'html',
             typeSpeed: 70,
             backSpeed:60,

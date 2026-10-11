@@ -1076,6 +1076,53 @@ body { overflow-x: hidden; }
 .experience-card p { margin: 1.25rem 0; color: white; font-size: 0.92rem; line-height: 1.65; }
 .experience-card small { color: #d5b6ff; font-weight: 700; }
 
+/* Education and leadership sections reuse the portfolio card language. */
+#education, #leadership {
+    min-height: 100vh;
+    padding: 12vh 8vw;
+    box-sizing: border-box;
+}
+
+#education { background-image: linear-gradient(rgb(77, 77, 224), rgb(63, 63, 140), rgb(40, 40, 122)); }
+#leadership { background-image: linear-gradient(rgb(39, 39, 78), rgb(64, 64, 165), rgb(77, 77, 224)); }
+
+#education-heading, #leadership-heading {
+    margin: 0;
+    color: white;
+    font-family: "Qwitcher Grypen", cursive;
+    font-size: clamp(4.5rem, 11vw, 9rem);
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0.2vh 0.2vh 1vh rgb(104, 104, 112);
+}
+
+#education > p, #leadership > p {
+    max-width: 700px;
+    margin: 0 auto 5vh;
+    text-align: center;
+    font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+    line-height: 1.6;
+}
+
+.education-flex, .leadership-flex { display: grid; gap: 1.25rem; max-width: 1200px; margin: 0 auto; }
+.education-flex { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.leadership-flex { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.education-card, .leadership-card {
+    box-sizing: border-box;
+    padding: 1.6rem;
+    border: 1px solid rgba(220, 202, 255, 0.5);
+    border-radius: 20px;
+    background: rgba(19, 19, 62, 0.35);
+    box-shadow: 0 8px 24px rgba(13, 9, 50, 0.2);
+    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+.education-card:hover, .leadership-card:hover { transform: translateY(-6px); border-color: #e0caff; }
+.education-card > i, .leadership-card > i { color: #d5b6ff; font-size: 1.8rem; margin-bottom: 1rem; }
+.education-card h3, .leadership-card h3 { margin: 0; color: white; font-size: 1.15rem; line-height: 1.4; }
+.education-card h4, .leadership-card h4 { margin: 0.4rem 0 0; color: #d5b6ff; font-size: 0.9rem; font-style: italic; font-weight: 600; }
+.education-card p, .leadership-card p { margin: 1.25rem 0; color: white; font-size: 0.92rem; line-height: 1.65; }
+.education-card small, .leadership-card small { color: #d5b6ff; font-weight: 700; }
+
 @media (max-width: 768px) {
     .rightSection .icons { position: static; transform: none; }
     .rightSection .space-icon { flex-direction: row; }
@@ -1085,4 +1132,8 @@ body { overflow-x: hidden; }
     .experience-flex { grid-template-columns: 1fr; }
     .experience-card-header { flex-direction: column; }
     .experience-meta { text-align: left; }
+    #education, #leadership { min-height: auto; padding: 4.5rem 1.25rem; }
+    #education-heading, #leadership-heading { font-size: clamp(4rem, 19vw, 6.5rem); }
+    #education > p, #leadership > p { margin-bottom: 2rem; }
+    .education-flex, .leadership-flex { grid-template-columns: 1fr; }
 }
