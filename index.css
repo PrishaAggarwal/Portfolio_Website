@@ -1141,18 +1141,22 @@ body { overflow-x: hidden; }
 /* One continuous background across the complete portfolio. */
 html, body {
     min-height: 100%;
-    background: rgb(77, 77, 224);
+    background: rgb(18, 18, 62);
 }
 
 main {
     background: linear-gradient(
         180deg,
-        rgb(42, 42, 86) 0%,
-        rgb(77, 77, 224) 18%,
-        rgb(78, 78, 164) 36%,
-        rgb(63, 63, 140) 54%,
-        rgb(64, 64, 165) 73%,
-        rgb(77, 77, 224) 100%
+        rgb(0, 0, 33) 0%,
+        rgb(42, 42, 86) 10%,
+        rgb(77, 77, 224) 22%,
+        rgb(33, 33, 75) 34%,
+        rgb(38, 38, 90) 45%,
+        rgb(78, 78, 164) 56%,
+        rgb(77, 77, 224) 66%,
+        rgb(63, 63, 140) 77%,
+        rgb(40, 40, 122) 87%,
+        rgb(39, 39, 78) 100%
     );
 }
 
@@ -1162,6 +1166,27 @@ main {
 }
 
 Footer { border: 0; }
+
+/* Minimal footer: match the fixed navigation color and keep the name intact. */
+Footer {
+    background-color: rgb(18, 18, 62) !important;
+    min-height: 150px;
+    height: auto;
+    padding: 2rem 8vw;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prisha-footer { margin: 0 0 1rem; white-space: nowrap; }
+.footer-left, .footer-right { margin: 0; }
+.footer-right { text-align: right; }
+.end { margin: 0; }
+
+@media (max-width: 768px) {
+    Footer { background-color: rgb(18, 18, 62) !important; }
+    .footer-right { text-align: center; }
+}
 
 /* Keep the expanded navigation and new cards comfortable on tablet-sized screens. */
 @media (min-width: 769px) and (max-width: 1100px) {
