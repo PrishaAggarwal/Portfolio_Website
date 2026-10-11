@@ -1141,18 +1141,18 @@ body { overflow-x: hidden; }
 /* One continuous background across the complete portfolio. */
 html, body {
     min-height: 100%;
-    background: rgb(18, 18, 62);
+    background: rgb(77, 77, 224);
 }
 
 main {
     background: linear-gradient(
         180deg,
-        rgb(0, 0, 33) 0%,
-        rgb(42, 42, 86) 14%,
-        rgb(77, 77, 224) 34%,
-        rgb(63, 63, 140) 57%,
-        rgb(39, 39, 78) 78%,
-        rgb(18, 18, 62) 100%
+        rgb(42, 42, 86) 0%,
+        rgb(77, 77, 224) 18%,
+        rgb(78, 78, 164) 36%,
+        rgb(63, 63, 140) 54%,
+        rgb(64, 64, 165) 73%,
+        rgb(77, 77, 224) 100%
     );
 }
 
