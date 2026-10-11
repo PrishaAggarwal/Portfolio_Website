@@ -1147,16 +1147,13 @@ html, body {
 main {
     background: linear-gradient(
         180deg,
-        rgb(0, 0, 33) 0%,
-        rgb(42, 42, 86) 10%,
-        rgb(77, 77, 224) 22%,
-        rgb(33, 33, 75) 34%,
-        rgb(38, 38, 90) 45%,
-        rgb(78, 78, 164) 56%,
-        rgb(77, 77, 224) 66%,
-        rgb(63, 63, 140) 77%,
-        rgb(40, 40, 122) 87%,
-        rgb(39, 39, 78) 100%
+        rgb(77, 77, 224) 0%,
+        rgb(78, 78, 164) 14%,
+        rgb(63, 63, 140) 30%,
+        rgb(77, 77, 224) 47%,
+        rgb(78, 78, 164) 64%,
+        rgb(63, 63, 140) 82%,
+        rgb(77, 77, 224) 100%
     );
 }
 
@@ -1180,6 +1177,8 @@ Footer {
 
 .prisha-footer { margin: 0 0 1rem; white-space: nowrap; }
 .footer-left, .footer-right { margin: 0; }
+.footer-left { display: flex; flex-direction: column; align-items: center; }
+.footer-icons { align-items: center; }
 .footer-right { text-align: right; }
 .end { margin: 0; }
 
